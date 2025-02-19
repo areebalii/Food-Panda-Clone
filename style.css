@@ -1,0 +1,285 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7F7F7;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+header {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 40px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Dropdown Styling */
+select {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 5px;
+  appearance: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none; 
+}
+
+select#user {
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+
+select#eng {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Icon Styling */
+.fas {
+  font-size: 16px;
+  color: #333;
+}
+
+.fa-shopping-cart {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* overflow: hidden;  */
+  position: relative;
+  height: 600px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.hero .left {
+  width: 60%; /* Adjust width as needed */
+  padding: 20px;
+}
+
+.hero .left h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero .left .input-container {
+  display: flex;
+  background-color: white;
+  align-items: center;  
+  border: 1px solid #ccc; 
+  border-radius: 12px; 
+  padding: 15px;    
+  margin-bottom: 20px;
+}
+
+.hero .left .input-container input {
+  flex: 1;
+  border: 1px solid grey;
+  outline: none;
+  font-size: 16px;  
+  padding: 15px;
+  margin-right: 12px;
+}
+
+.hero .left .input-container button {
+  padding: 10px 20px; 
+  background-color: #E21B70;         
+  color: #fff;
+  border: none;         
+  border-radius: 8px; 
+  cursor: pointer; 
+}
+
+.hero .right {
+  width: 40%; 
+  height: 100%; 
+  background: url("https://images.deliveryhero.io/image/foodpanda/homepage/refresh-hero-home-pk.png?width=1264");
+  background-position: left;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+/* Banner Section */
+.banner {
+  width: 100%;
+  margin: 0 auto; 
+  position: relative; 
+}
+
+.banner h1 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 30px;
+  text-align: start;
+  max-width: 1300px;
+  margin: 0 auto; 
+}
+
+.banner img {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 540px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.list-restorent {
+  padding: 20px;
+  background-color: white;
+  max-width: 550px;
+  position: absolute;
+  bottom: -170px;
+  left: 35%;
+  transform: translateX(-70%); 
+  border-radius: 23px;
+}
+
+.list-restorent p {
+  width: 400px;
+  margin: 20px 0;
+}
+
+.list-restorent button {
+  padding: 10px 20px;
+  background-color: #E21B70;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button{
+  transition: .2s;
+}
+button:hover{
+  background-color: #a20f4f;
+}
+
+/* Cities Styling */
+.cities {
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top: 250px;
+}
+
+.cities h1 {
+  margin-bottom: 30px;
+}
+
+.cities .city-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cities .city-cards .card {
+  position: relative; /* Make the card a positioning context for the label */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  cursor: pointer;
+}
+
+.cities .city-cards .img {
+  width: 100%; /* Ensure the image takes the full width of the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.city-cards img {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.city-cards img:hover {
+  transform: scale(1.1);
+}
+
+.lable {
+  position: absolute; /* Position the label relative to the card */
+  background-color: white;
+  color: black;
+  bottom: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero .left,
+  .hero .right {
+    width: 100%;
+  }
+
+  .hero .right img {
+    height: 300px; /* Adjust height for smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+  .hero .left h1 {
+    font-size: 28px; /* Adjust font size for smaller screens */
+  }
+
+  .hero .left .input-container {
+    flex-direction: column;
+  }
+
+  .hero .left .input-container input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .hero .left .input-container button {
+    width: 100%;
+  }
+}
