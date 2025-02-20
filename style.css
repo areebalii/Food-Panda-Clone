@@ -151,7 +151,7 @@ select#eng {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 540px;
+  height: 370px;
   object-fit: cover;
   width: 100%;
 }
@@ -211,8 +211,8 @@ button:hover{
 }
 
 .cities .city-cards .img {
-  width: 100%; /* Ensure the image takes the full width of the card */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; 
+  height: auto; 
 }
 
 .city-cards img {
@@ -235,51 +235,3 @@ button:hover{
 }
 
 
-
-
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .hero .left,
-  .hero .right {
-    width: 100%;
-  }
-
-  .hero .right img {
-    height: 300px; /* Adjust height for smaller screens */
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 480px) {
-  .hero .left h1 {
-    font-size: 28px; /* Adjust font size for smaller screens */
-  }
-
-  .hero .left .input-container {
-    flex-direction: column;
-  }
-
-  .hero .left .input-container input {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .hero .left .input-container button {
-    width: 100%;
-  }
-}
