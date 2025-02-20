@@ -308,3 +308,81 @@ button:hover{
   right: 10px;
   top: 0;
 }
+
+/* Business Section */
+.business-section {
+  padding: 50px 20px;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  width: 100%;
+}
+
+.image-box {
+  width: 100%;
+}
+
+.image-box img {
+  width: 100%; 
+  height: 400px;
+  /* background-position: 50%; */
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+  object-fit: cover;
+}
+
+.info-card {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  text-align: left;
+  margin-top: 20px; 
+  position: absolute;
+  bottom: -40px;
+  left: 20%;
+  transform: translate(-35%);
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.card-description {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #E91E63;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #C2185B;
+}
