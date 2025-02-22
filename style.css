@@ -492,8 +492,428 @@ h3{
   color: #777;
 }
 
-/* Social Media Icons */
 .social-icons img {
   width: 20px;
   margin: 0 5px;
+}
+
+/* Responsive Design for Different Screen Sizes */
+
+/* Tablets (Max Width: 1024px) */
+@media (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero .right {
+        width: 100%;
+        height: 400px;
+        background-position: center;
+    }
+
+    .cities .city-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns instead of 4 */
+    }
+
+    .list-restorent {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .business-section {
+        padding: 30px;
+    }
+
+    .info-card {
+        max-width: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .content {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .mobile-images img {
+        width: 100%;
+        position: relative;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Mobile Devices (Max Width: 768px) */
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero .left h1 {
+        font-size: 28px;
+    }
+
+    .hero .left .input-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .hero .left .input-container input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .hero .left .input-container button {
+        width: 100%;
+    }
+
+    .cities {
+        margin-top: 150px;
+    }
+
+    .cities .city-cards {
+        grid-template-columns: repeat(1, 1fr); /* Single column */
+    }
+
+    .list-restorent {
+        bottom: -140px;
+        width: 90%;
+    }
+
+    .container h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .content-box {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .mobile-images img {
+        width: 100%;
+        position: relative;
+    }
+
+    .business-section {
+        padding: 20px;
+    }
+
+    .info-card {
+        max-width: 280px;
+        position: relative;
+        bottom: 0;
+    }
+
+    .footer {
+        padding: 30px 10px;
+    }
+
+    .footer-cities {
+        text-align: center;
+    }
+
+    .footer-cities a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Small Mobile Devices (Max Width: 480px) */
+@media (max-width: 480px) {
+    .hero .left h1 {
+        font-size: 24px;
+    }
+
+    .list-restorent {
+        bottom: -120px;
+        width: 95%;
+    }
+
+    .cities {
+        margin-top: 100px;
+    }
+
+    .cities .city-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .business-section {
+        padding: 15px;
+    }
+
+    .info-card {
+        max-width: 250px;
+    }
+
+    .footer {
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-column h4 {
+        font-size: 14px;
+    }
+
+    .footer-column a {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+}
+
+/* Media Queries for Responsive Design */
+
+/* For screens smaller than 1200px (e.g., tablets) */
+@media (max-width: 1200px) {
+
+  .hero{
+    flex-direction: row;
+  }
+.input-container{
+  flex-direction: column;
+  width: 100%;
+}
+.input-container input{
+  width: 100%;
+}
+.input-container button{
+  width: 100%;
+}
+.input-container .business-section{
+  width: 100%;
+}
+
+  .cities {
+    margin-top: 300px;
+  }
+
+  .cities .city-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .mobile-images img {
+    width: 500px;
+    right: 0;
+  }
+
+  .info-card {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .about{
+    padding: 10px;
+  }
+}
+
+/* For screens smaller than 768px (e.g., mobile phones) */
+@media (max-width: 768px) {
+  nav{
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul{
+    flex-direction: row;
+  }
+  .hero .left h1 {
+    font-size: 28px;
+  }
+
+  .hero .left .input-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero .left .input-container input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .hero .left .input-container button {
+    width: 100%;
+  }
+
+  .list-restorent {
+    width: 90%;
+    bottom: -250px;
+  }
+
+  .list-restorent p {
+    width: 100%;
+  }
+
+  .cities .city-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container h1 {
+    font-size: 32px;
+  }
+
+  .content-box {
+    padding: 20px;
+  }
+
+  .content-box h2 {
+    font-size: 24px;
+  }
+
+  .content-box p {
+    font-size: 16px;
+  }
+
+  .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile-images img {
+    width: 100%;
+    position: static;
+  }
+
+  .info-card {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* For screens smaller than 480px (e.g., small mobile phones) */
+@media (max-width: 480px) {
+  nav{
+    align-items: center;
+    justify-content: center;
+  }
+  nav ul{
+    flex-direction: row;
+  }
+  .hero .left h1 {
+    font-size: 24px;
+  }
+
+  .hero .left .input-container {
+    padding: 10px;
+  }
+
+  .hero .left .input-container input {
+    padding: 10px;
+  }
+
+  .hero .left .input-container button {
+    padding: 8px 15px;
+  }
+
+  .list-restorent {
+    bottom: -300px;
+  }
+
+  .cities .city-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .container h1 {
+    font-size: 28px;
+  }
+
+  .content-box h2 {
+    font-size: 20px;
+  }
+
+  .content-box p {
+    font-size: 14px;
+  }
+
+  .qr-code img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .info-card {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-description {
+    font-size: 12px;
+  }
+
+  .cta-button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
 }
